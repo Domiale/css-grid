@@ -10,12 +10,14 @@ body {
   padding: 48px;
 }
 
+/* Container con una grilla de 5 columnas x 5 filas del mismo ancho y alto */
+
 .container {
   display: grid; /* Esto habilita el compartimiento de grid en el contenedor */
 
-  grid-template-columns: 100px 200px 150px; /* Esto define el ancho de las columnas  */
+  grid-template-columns: repeat(2, 1fr 2fr); /* Esto define el ancho de las columnas  */
 
-  grid-template-rows: 100px 200px 50px; /* Esto define el alto de la fila  */
+  grid-template-rows: repeat(2, 1fr 2fr); /* Esto define el alto de la fila  */
 
   width: 500px;
   height: 500px;
