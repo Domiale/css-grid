@@ -21,8 +21,12 @@ body {
 
   gap: 24px; /* Define el espacio entre filas y columnas */
 
-  row-gap: 50px; /* Espacio entr filas */
-  column-gap: 10px; /* Espacio entre columnasS */
+  grid-auto-flow: row; /* Es el valor por defoult */
+
+  grid-auto-flow: column; /* Este valor cambia el flujo a columnas */
+
+  /* Esto no es de grid */
+  direction: rtl; /* Right to left */
 
   width: 500px;
   height: 500px;
@@ -48,4 +52,12 @@ body {
 
 .item5 {
   background-color: cadetblue;
+}
+
+.container div {
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
