@@ -15,14 +15,14 @@ body {
 .container {
   display: grid; /* Esto habilita el compartimiento de grid en el contenedor */
 
-  grid-template-columns: 100px 100px 100px;  /* Esto define el ancho de las columnas  */
+  grid-template-columns: repeat(3,1fr);  /* Esto define el ancho de las columnas  */
 
-  grid-template-rows: repeat(3,100px);  /* Esto define el alto de la fila  */
+  grid-template-rows: repeat(3,1fr);  /* Esto define el alto de la fila  */
 
-  grid-template-areas: 
-    "header header header"
-    "main   main   sidbear"
-    "footer footer footer";
+  gap: 24px; /* Define el espacio entre filas y columnas */
+
+  row-gap: 50px; /* Espacio entr filas */
+  column-gap: 10px; /* Espacio entre columnasS */
 
   width: 500px;
   height: 500px;
@@ -30,22 +30,22 @@ body {
   background-color: rgb(136, 0, 255);
 }
 
-.header {
-  grid-area: header;
+.item1 {
+  background-color: aliceblue;
+}
+
+.item2 {
+  background-color: antiquewhite;
+}
+
+.item3 {
   background-color: aqua;
 }
 
-.main {
-  grid-area: main;
-  background-color: rgb(255, 77, 0);
+.item4 {
+  background-color: rgb(202, 144, 255);
 }
 
-.sidbear {
-  grid-area: sidbear;
-  background-color: cornsilk;
-}
-
-.footer {
-  grid-area: footer;
-  background-color: rgb(255, 233, 33);
+.item5 {
+  background-color: cadetblue;
 }
